@@ -7,16 +7,7 @@ export default function App() {
     <div className="text-2xl">
       <WeatherCard />
 
-      <div className="grid grid-cols-3 gap-4">
-        <div className="col-span-1">
-          <Badges title="Wind" value="1 mph" />
-        </div>{" "}
-        <div className="col-span-1">
-          <Badges title="Wind" value="1 mph" />
-        </div>{" "}
-        <div className="col-span-1">
-          <Badges title="Wind" value="1 mph" />
-        </div>{" "}
+      <div className="grid grid-cols-3 gap-4 bg-red-500 ">
         <div className="col-span-1">
           <Badges title="Wind" value="1 mph" />
         </div>

@@ -4,7 +4,7 @@ import CardBody from "./CardBody";
 import Badges from "../common/Badges";
 export default function WeatherCard() {
   return (
-    <article className="p-8 shadow-2xl  rounded-2xl max-w-md   mx-auto ">
+    <article className="p-8 shadow-2xl  rounded-2xl max-w-md min-w-sm  mx-auto ">
       <CardHeader />
       <CardBody />
     </article>

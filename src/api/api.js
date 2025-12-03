@@ -16,4 +16,5 @@ export const getCurrentLocation = async () => {
   });
   return loc.data;
 };
+
 export default instances;

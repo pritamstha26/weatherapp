@@ -8,7 +8,6 @@ export default function ContextProvider({ children }) {
     const fetchData = async () => {
       try {
         const dat = await getCurrentLocation();
-        console.log(dat);
         setData(dat);
       } catch (error) {
         console.log("Error occured", error);

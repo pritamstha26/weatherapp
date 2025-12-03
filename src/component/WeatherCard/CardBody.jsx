@@ -5,14 +5,15 @@ export default function CardBody() {
   const { data } = useContext(WeatherContext);
   return (
     <section className="">
-      <div className="grid  grid-cols-2 py-5">
+      <div className="grid  grid-cols-2  py-5">
         <div className="col-span-1 flex justify-start gap-3 items-center">
           <IoIosPartlySunny />
           <p>
-            12 &deg;<sup>F</sup>
+            {data?.main.temp}
+            <sup>&deg;</sup>C
           </p>
         </div>
-        <div className="col-span-1">
+        <div className="col-span-1 text-center">
           <h4 className="text-sm md:text-lg">{data?.weather[0]?.main}</h4>
           <h3 className="text-sm md:text-lg">
             Feels Like {data?.main?.temp}&deg;C
@@ -20,8 +21,11 @@ export default function CardBody() {
         </div>
       </div>
       <div>
+        <p>
+          {data?.name}, {data?.sys?.country}{" "}
+        </p>
         <p className="text-lg">
-          THere might be {data?.weather[0]?.description}
+          There might be {data?.weather[0]?.description}
         </p>
       </div>
     </section>

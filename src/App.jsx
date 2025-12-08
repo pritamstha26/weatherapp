@@ -13,10 +13,10 @@ export default function App() {
     setCity("");
   };
   return (
-    <div className="text-2xl  ">
+    <div className="text-2xl  bg-[#e6eff0] h-screen  ">
       <form
         onSubmit={onSubmit}
-        className="m-4 gap-2 justify-center  flex flex-wrap "
+        className=" py-7 gap-2 justify-center  flex flex-wrap "
       >
         <SearchBar setCity={setCity} city={city} />
         <Button type="submit" />

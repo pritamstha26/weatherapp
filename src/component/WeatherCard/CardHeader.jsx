@@ -18,7 +18,7 @@ export default function CardHeader() {
     <header className="flex justify-between items-center gap-3">
       <div>
         <h5 className="text-sm sm:text-lg ">Current weather</h5>
-        <h4 className="text-sm  sm:text-lg md:text-2xl font-medium">{}</h4>
+        <h4 className="text-sm  sm:text-lg md:text-2xl font-medium">12</h4>
       </div>
       <div>{isDay}</div>
     </header>

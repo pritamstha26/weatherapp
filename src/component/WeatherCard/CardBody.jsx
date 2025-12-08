@@ -3,6 +3,7 @@ import { IoIosPartlySunny } from "react-icons/io";
 import { WeatherContext } from "../../context/WeatherContext";
 export default function CardBody() {
   const { data } = useContext(WeatherContext);
+  if (!data) return <div>Loading</div>;
   return (
     <section className="">
       <div className="grid  grid-cols-2  py-5">

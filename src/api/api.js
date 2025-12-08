@@ -8,13 +8,21 @@ const instances = axios.create({
     units: "metric",
   },
 });
-export const getCurrentLocation = async () => {
+export const getCurrentLocation = async (lat, lon) => {
   const loc = await instances.get("", {
     params: {
-      q: "jakarta",
+      lat,
+      lon,
+      units: "metric",
     },
   });
   return loc.data;
+};
+export const searchByName = async (cityName) => {
+  const name = await instances.get("", {
+    params: { q: cityName },
+  });
+  return name.data;
 };
 
 export default instances;
